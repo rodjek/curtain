@@ -1,5 +1,6 @@
 require 'fileutils'
 require 'curtain/source/git'
+require 'curtain/source/forge'
 require 'curtain/dsl'
 
 module Curtain

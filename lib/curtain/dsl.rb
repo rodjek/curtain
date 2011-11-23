@@ -18,6 +18,10 @@ module Curtain
       source Source::Git.new(options.merge({'uri' => uri}))
     end
 
+    def forge(package, options = {})
+      source Source::Forge.new(options.merge({'package' => package}))
+    end
+
   private
 
     def source(obj)
